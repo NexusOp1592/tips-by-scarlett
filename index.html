@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tips by Scarlett · Summer's Hottest Mani Spot</title>
+<meta name="description" content="Tips by Scarlett — handcrafted manicures and custom nail art. Book online now.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Caveat:wght@500;600;700&family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --sand: #FFF4E0;
+  --sand-deep: #FFE9C7;
+  --peach: #FFB088;
+  --coral: #FF7B5C;
+  --hot-pink: #FF3D88;
+  --magenta: #E91E63;
+  --sunset: #FF9A5A;
+  --tangerine: #FF6B35;
+  --aqua: #2DD4BF;
+  --aqua-deep: #06B6D4;
+  --ocean: #0EA5E9;
+  --ocean-deep: #0284C7;
+  --palm: #15803D;
+  --palm-light: #22C55E;
+  --gold: #FCD34D;
+  --gold-deep: #D4A04C;
+  --ink: #1A0F2E;
+  --plum: #2D1B45;
+  --line: #FFE0C7;
+  --muted: #8B6F8E;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--sand);
+  color: var(--ink);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ━━━━━━━━ HERO ━━━━━━━━ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top, #FFD89B 0%, transparent 60%),
+    linear-gradient(180deg, #FFB088 0%, #FF7B5C 35%, #FF3D88 70%, #E91E63 100%);
+  padding: 50px 20px 80px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-sun {
+  position: absolute;
+  top: 8%; left: 50%;
+  transform: translateX(-50%);
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #FFE066 0%, #FCD34D 40%, transparent 70%);
+  z-index: 1;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.9; }
+  50% { transform: translateX(-50%) scale(1.08); opacity: 1; }
+}
+
+.palm-deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.palm-deco svg { width: 100%; height: 100%; }
+
+.palm-hero-bl { bottom: -10px; left: -20px; width: 180px; height: 220px; }
+.palm-hero-br { bottom: -10px; right: -20px; width: 180px; height: 220px; transform: scaleX(-1); }
+
+.sparkle {
+  position: absolute;
+  color: var(--gold);
+  font-size: 18px;
+  text-shadow: 0 0 8px rgba(252,211,77,0.8);
+  z-index: 2;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.4; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1.2); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  max-width: 600px;
+  margin-top: 80px;
+}
+
+.hero-stars {
+  font-size: 14px;
+  letter-spacing: 10px;
+  color: var(--gold);
+  text-shadow: 0 0 10px rgba(252,211,77,0.8);
+  margin-bottom: 10px;
+}
+
+.hero-tips {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(80px, 18vw, 140px);
+  letter-spacing: 6px;
+  line-height: 0.85;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFE9C7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 4px 0 rgba(0,0,0,0.2));
+  font-weight: 400;
+}
+
+.hero-by {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(28px, 5vw, 38px);
+  color: var(--gold);
+  margin: 4px 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.15);
+  transform: rotate(-3deg);
+  display: inline-block;
+}
+
+.hero-scarlett {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(60px, 13vw, 100px);
+  color: white;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 0.95;
+  text-shadow:
+    3px 3px 0 rgba(0,0,0,0.15),
+    0 0 30px rgba(252,211,77,0.4);
+}
+
+.hero-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 18px 0 12px;
+}
+.hero-divider::before, .hero-divider::after {
+  content: '';
+  width: 36px;
+  height: 2px;
+  background: var(--gold);
+  box-shadow: 0 0 6px rgba(252,211,77,0.6);
+}
+.hero-divider span { color: var(--gold); font-size: 10px; }
+
+.hero-tagline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(14px, 3vw, 16px);
+  letter-spacing: 5px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: var(--ink);
+  padding: 16px 32px;
+  border-radius: 100px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-decoration: none;
+  border: 3px solid var(--ink);
+  box-shadow: 0 6px 0 var(--ink);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 var(--ink);
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  z-index: 5;
+  animation: bounce 2s infinite;
+  opacity: 0.85;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+
+/* ━━━━━━━━ CONTAINER ━━━━━━━━ */
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ━━━━━━━━ SECTIONS ━━━━━━━━ */
+.section {
+  padding: 60px 0 30px;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--gold);
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+}
+
+.section-title em {
+  font-style: italic;
+  background: linear-gradient(135deg, var(--tangerine), var(--hot-pink), var(--magenta));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-sub {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+  color: var(--ocean-deep);
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* ━━━━━━━━ SERVICES ━━━━━━━━ */
+.services {
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 24px;
+  padding: 8px 20px;
+  box-shadow: 8px 8px 0 var(--hot-pink);
+}
+
+.service-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 2px dashed var(--line);
+  gap: 16px;
+}
+
+.service-row:last-child { border-bottom: none; }
+
+.service-info { flex: 1; }
+
+.service-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+
+.service-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.service-price {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, var(--tangerine), var(--hot-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+}
+
+/* ━━━━━━━━ CHAT ━━━━━━━━ */
+.chat-card {
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 8px 8px 0 var(--aqua);
+}
+
+.quick-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 14px;
+  justify-content: center;
+}
+
+.quick-btn {
+  background: white;
+  border: 2px solid var(--ink);
+  border-radius: 100px;
+  padding: 7px 14px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 2px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all .2s;
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.quick-btn:hover {
+  background: var(--hot-pink);
+  color: white;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.chat-messages {
+  height: 280px;
+  overflow-y: auto;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scroll-behavior: smooth;
+  background: linear-gradient(180deg, #FFF9F0 0%, #FFFFFF 100%);
+}
+
+.chat-messages::-webkit-scrollbar { width: 4px; }
+.chat-messages::-webkit-scrollbar-thumb { background: var(--hot-pink); border-radius: 4px; }
+
+.msg {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  animation: fadeUp .3s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.msg.user { flex-direction: row-reverse; }
+
+.msg-av {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid var(--ink);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+.msg.ai .msg-av {
+  background: linear-gradient(135deg, var(--tangerine), var(--hot-pink));
+}
+
+.msg.user .msg-av {
+  background: linear-gradient(135deg, var(--aqua), var(--ocean));
+  font-size: 0.6rem;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.5px;
+  font-style: normal;
+}
+
+.bubble {
+  max-width: 78%;
+  padding: 11px 15px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 500;
+  border-radius: 18px;
+  border: 2px solid var(--ink);
+}
+
+.msg.ai .bubble {
+  background: var(--sand);
+  color: var(--ink);
+  border-bottom-left-radius: 4px;
+}
+
+.msg.user .bubble {
+  background: linear-gradient(135deg, var(--aqua), var(--ocean));
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.typing { display: flex; gap: 5px; align-items: center; height: 18px; }
+.dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--hot-pink);
+  animation: tdot 1s infinite;
+}
+.dot:nth-child(2){animation-delay:.15s}
+.dot:nth-child(3){animation-delay:.3s}
+@keyframes tdot{0%,80%,100%{opacity:.3}40%{opacity:1}}
+
+.chat-input-row {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 2px solid var(--ink);
+  background: white;
+}
+
+.chat-input {
+  flex: 1;
+  border: 2px solid var(--ink);
+  border-radius: 100px;
+  padding: 10px 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  outline: none;
+  color: var(--ink);
+  background: var(--sand);
+  transition: background .2s;
+}
+
+.chat-input:focus { background: white; }
+
+.send-btn {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: linear-gradient(135deg, var(--tangerine), var(--hot-pink));
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform .15s, box-shadow .15s;
+}
+
+.send-btn:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+.send-btn:disabled { opacity: .4; cursor: not-allowed; }
+
+/* ━━━━━━━━ BOOKING ━━━━━━━━ */
+.booking-card {
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 24px;
+  padding: 28px 22px;
+  box-shadow: 8px 8px 0 var(--gold);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: var(--ocean-deep);
+}
+
+.form-control {
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 11px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--sand);
+  outline: none;
+  width: 100%;
+  transition: background .2s;
+}
+
+.form-control:focus { background: white; }
+
+select.form-control {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%231A0F2E' stroke-width='1.8' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, var(--tangerine), var(--hot-pink), var(--magenta));
+  color: white;
+  border: 2px solid var(--ink);
+  border-radius: 100px;
+  padding: 16px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.submit-btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+
+.success-msg {
+  display: none;
+  text-align: center;
+  padding: 32px 20px;
+  background: linear-gradient(135deg, var(--sand), var(--peach));
+  border: 2px dashed var(--ink);
+  border-radius: 18px;
+  animation: fadeUp .4s ease;
+}
+
+.success-msg.show { display: block; }
+
+.success-icon {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
+
+.success-msg h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.success-msg p {
+  font-size: 0.9rem;
+  color: var(--ink);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.success-detail {
+  font-family: 'Caveat', cursive;
+  font-size: 1.3rem;
+  color: var(--magenta);
+  margin: 16px 0;
+  padding: 14px 0;
+  border-top: 1px dashed var(--ink);
+  border-bottom: 1px dashed var(--ink);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+/* ━━━━━━━━ QR ━━━━━━━━ */
+.qr-card {
+  background: linear-gradient(135deg, var(--aqua), var(--ocean));
+  border: 3px solid var(--ink);
+  border-radius: 24px;
+  padding: 28px 22px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 8px 8px 0 var(--coral);
+}
+
+.qr-card::before {
+  content: '';
+  position: absolute;
+  top: -30px; right: -30px;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle, rgba(252,211,77,0.4) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.qr-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.qr-sub {
+  font-family: 'Caveat', cursive;
+  font-size: 1.15rem;
+  color: var(--gold);
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.qr-frame {
+  display: inline-block;
+  padding: 14px;
+  background: white;
+  border: 3px solid var(--ink);
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.qr-frame img {
+  display: block;
+  width: 180px;
+  height: 180px;
+}
+
+.qr-url {
+  font-size: 0.78rem;
+  color: white;
+  background: rgba(0,0,0,0.25);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  word-break: break-all;
+  margin-bottom: 12px;
+}
+
+.qr-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.qr-btn {
+  background: white;
+  border: 2px solid var(--ink);
+  border-radius: 100px;
+  padding: 9px 16px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform .15s, box-shadow .15s;
+}
+
+.qr-btn:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
+
+.qr-url-input {
+  width: 100%;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  outline: none;
+  margin-bottom: 10px;
+  background: white;
+}
+
+/* ━━━━━━━━ FOOTER ━━━━━━━━ */
+.footer {
+  background: var(--ink);
+  color: white;
+  text-align: center;
+  padding: 40px 20px 30px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-emoji {
+  font-size: 1.6rem;
+  letter-spacing: 8px;
+  margin-bottom: 14px;
+}
+
+.footer-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  margin-bottom: 2px;
+}
+
+.footer-sub {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, var(--tangerine), var(--hot-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+.footer-meta {
+  margin-top: 18px;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+</style>
+</head>
+<body>
+
+<!-- ━━━━━━━━ HERO ━━━━━━━━ -->
+<div class="hero">
+  <div class="hero-sun"></div>
+
+  <span class="sparkle" style="top: 18%; left: 14%;">✦</span>
+  <span class="sparkle" style="top: 30%; right: 18%; animation-delay: 0.5s;">✧</span>
+  <span class="sparkle" style="top: 14%; right: 30%; animation-delay: 1s; font-size: 12px;">✦</span>
+  <span class="sparkle" style="top: 45%; left: 22%; animation-delay: 0.8s; font-size: 14px;">✧</span>
+  <span class="sparkle" style="top: 38%; right: 32%; animation-delay: 1.3s;">✦</span>
+
+  <div class="palm-deco palm-hero-bl">
+    <svg viewBox="0 0 80 100"><path d="M40 100 Q38 60 35 30 Q30 32 32 50" stroke="#1A0F2E" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M35 30 Q15 28 8 18 Q18 22 28 25" fill="#15803D"/><path d="M35 30 Q15 32 5 40 Q15 38 28 32" fill="#15803D"/><path d="M35 30 Q55 22 70 12 Q60 22 50 28" fill="#22C55E"/><path d="M35 30 Q60 32 75 30 Q60 30 50 30" fill="#22C55E"/><path d="M35 30 Q40 10 55 5 Q42 18 40 28" fill="#15803D"/></svg>
+  </div>
+  <div class="palm-deco palm-hero-br">
+    <svg viewBox="0 0 80 100"><path d="M40 100 Q38 60 35 30 Q30 32 32 50" stroke="#1A0F2E" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M35 30 Q15 28 8 18 Q18 22 28 25" fill="#15803D"/><path d="M35 30 Q15 32 5 40 Q15 38 28 32" fill="#15803D"/><path d="M35 30 Q55 22 70 12 Q60 22 50 28" fill="#22C55E"/><path d="M35 30 Q60 32 75 30 Q60 30 50 30" fill="#22C55E"/><path d="M35 30 Q40 10 55 5 Q42 18 40 28" fill="#15803D"/></svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-stars">✦ ✦ ✦</div>
+    <div class="hero-tips">TIPS</div>
+    <div class="hero-by">~ by ~</div>
+    <div class="hero-scarlett">Scarlett</div>
+    <div class="hero-divider"><span>◆</span></div>
+    <div class="hero-tagline">EST · 2026 · MIAMI VIBES</div>
+    <a href="#book" class="hero-cta">Book Now →</a>
+  </div>
+
+  <div class="scroll-hint">Scroll ↓</div>
+</div>
+
+<!-- ━━━━━━━━ SERVICES ━━━━━━━━ -->
+<div class="container">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-eyebrow">The Menu</div>
+      <h2 class="section-title">Services &amp; <em>Prices</em></h2>
+      <p class="section-sub">~ everything handcrafted ~</p>
+    </div>
+
+    <div class="services">
+      <div class="service-row">
+        <div class="service-info">
+          <div class="service-name">Signature Manicure</div>
+          <div class="service-desc">Shape, cuticle care &amp; a single polish</div>
+        </div>
+        <div class="service-price">$25</div>
+      </div>
+      <div class="service-row">
+        <div class="service-info">
+          <div class="service-name">French Tips</div>
+          <div class="service-desc">Classic or modern micro-French</div>
+        </div>
+        <div class="service-price">$30</div>
+      </div>
+      <div class="service-row">
+        <div class="service-info">
+          <div class="service-name">Custom Nail Art</div>
+          <div class="service-desc">Hand-painted designs on all ten</div>
+        </div>
+        <div class="service-price">$40</div>
+      </div>
+      <div class="service-row">
+        <div class="service-info">
+          <div class="service-name">Press-On Set</div>
+          <div class="service-desc">Custom-fit, reusable press-ons</div>
+        </div>
+        <div class="service-price">$45</div>
+      </div>
+      <div class="service-row">
+        <div class="service-info">
+          <div class="service-name">Gems &amp; Glitter</div>
+          <div class="service-desc">Crystals, chrome &amp; sparkle accents</div>
+        </div>
+        <div class="service-price">$55</div>
+      </div>
+      <div class="service-row">
+        <div class="service-info">
+          <div class="service-name">The Full Glam</div>
+          <div class="service-desc">Custom design, gems &amp; finishing touches</div>
+        </div>
+        <div class="service-price">$65</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ━━━━━━━━ CHAT ━━━━━━━━ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-eyebrow">Got Questions?</div>
+      <h2 class="section-title">Ask <em>Scarlett's</em> AI</h2>
+      <p class="section-sub">~ instant answers, 24/7 ~</p>
+    </div>
+
+    <div class="quick-btns">
+      <button class="quick-btn" onclick="sendQuick('What designs can you do?')">Designs</button>
+      <button class="quick-btn" onclick="sendQuick('How long does an appointment take?')">Duration</button>
+      <button class="quick-btn" onclick="sendQuick('How should I prep?')">Prep</button>
+      <button class="quick-btn" onclick="sendQuick('How long do nails last?')">Longevity</button>
+    </div>
+
+    <div class="chat-card">
+      <div class="chat-messages" id="messages">
+        <div class="msg ai">
+          <div class="msg-av">S</div>
+          <div class="bubble">Hey gorgeous! 🌴 I'm Scarlett's AI assistant. Ask me anything about services, designs, or how to book — let's get you summer-ready!</div>
+        </div>
+      </div>
+      <div class="chat-input-row">
+        <input class="chat-input" id="chatInput" type="text" placeholder="Type your question…" maxlength="200" />
+        <button class="send-btn" id="sendBtn" onclick="sendMessage()">→</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ━━━━━━━━ BOOKING ━━━━━━━━ -->
+  <div class="section" id="book">
+    <div class="section-header">
+      <div class="section-eyebrow">Reserve Your Spot</div>
+      <h2 class="section-title">Book an <em>Appointment</em></h2>
+      <p class="section-sub">~ takes 30 seconds ~</p>
+    </div>
+
+    <div class="booking-card">
+      <div class="booking-form" id="bookingForm">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input class="form-control" id="bName" type="text" placeholder="First &amp; last name" />
+        </div>
+        <div class="form-group">
+          <label>Phone or Instagram</label>
+          <input class="form-control" id="bContact" type="text" placeholder="@username or phone number" />
+        </div>
+        <div class="form-group">
+          <label>Service</label>
+          <select class="form-control" id="bService">
+            <option value="">Select a service</option>
+            <option>Signature Manicure — $25</option>
+            <option>French Tips — $30</option>
+            <option>Custom Nail Art — $40</option>
+            <option>Press-On Set — $45</option>
+            <option>Gems &amp; Glitter — $55</option>
+            <option>The Full Glam — $65</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Preferred Date</label>
+          <input class="form-control" id="bDate" type="date" />
+        </div>
+        <div class="form-group">
+          <label>Inspiration / Notes</label>
+          <input class="form-control" id="bNotes" type="text" placeholder="Share your inspo!" />
+        </div>
+        <button class="submit-btn" onclick="submitBooking()">✦ Request Appointment ✦</button>
+      </div>
+      <div class="success-msg" id="successMsg">
+        <div class="success-icon">🌴☀️</div>
+        <h3>You're on the list!</h3>
+        <p>Thanks for booking with Tips by Scarlett.</p>
+        <div class="success-detail" id="successDetail"></div>
+        <p>Scarlett will text you to confirm. Can't wait! 💕</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ━━━━━━━━ QR ━━━━━━━━ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-eyebrow">Share The Vibe</div>
+      <h2 class="section-title">Scan &amp; <em>Share</em></h2>
+      <p class="section-sub">~ tell your friends! ~</p>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-title">Show this to a friend</div>
+      <div class="qr-sub">they can scan to book ~</div>
+
+      <input class="qr-url-input" id="qrUrl" type="text" placeholder="Paste your live page URL…" />
+
+      <div class="qr-frame">
+        <img id="qrImage" src="" alt="QR Code" />
+      </div>
+
+      <div class="qr-url" id="qrUrlDisplay">Enter URL above to generate QR</div>
+
+      <div class="qr-actions">
+        <button class="qr-btn" onclick="generateQR()">Generate</button>
+        <button class="qr-btn" onclick="downloadQR()">⬇ Download</button>
+        <button class="qr-btn" onclick="shareLink()">↗ Share</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ━━━━━━━━ FOOTER ━━━━━━━━ -->
+<div class="footer">
+  <div class="footer-emoji">🌴 ✦ 🌊</div>
+  <div class="footer-title">TIPS</div>
+  <div class="footer-sub">by Scarlett</div>
+  <div class="footer-meta">Est · 2026 · Made with 💕</div>
+</div>
+
+<script>
+// ━━━━━━━━ CONFIG ━━━━━━━━
+// Set USE_OLLAMA = true if connecting to an Ollama instance.
+// Set the OLLAMA_URL to your Cloudflare Tunnel URL (or http://localhost:11434 for local testing).
+const USE_OLLAMA = false;
+const OLLAMA_URL = 'https://YOUR-TUNNEL-URL.trycloudflare.com'; // <-- change this
+const OLLAMA_MODEL = 'llama3.2'; // or 'mistral', 'phi3', etc.
+
+// If USE_OLLAMA is false, this calls Claude API directly (works in Claude's hosted artifact only)
+const SYSTEM_PROMPT = `You are the friendly AI assistant for "Tips by Scarlett," a chic tropical-themed nail studio run by a young entrepreneur named Scarlett. You help potential clients with questions about services and appointments.
+
+TONE: Warm, fun, and stylish — beach club vibes. Concise (2-4 sentences). Light emojis ok (🌴☀️✨💕). Be approachable but polished.
+
+SERVICES & PRICING:
+- Signature Manicure: $25 (shape, cuticle care, one polish)
+- French Tips: $30 (classic or micro-French)
+- Custom Nail Art: $40 (hand-painted designs)
+- Press-On Set: $45 (custom-fit, reusable)
+- Gems & Glitter: $55 (crystals, chrome, sparkle)
+- The Full Glam: $65 (custom design + gems + finishing)
+
+DETAILS:
+- Appointments: 45 min – 2 hours depending on service.
+- Press-ons last 1-2 weeks; painted designs last 5-7 days.
+- Available weekends and select weekday afternoons.
+- 24-hour cancellation notice appreciated.
+- Prep: arrive with clean, polish-free nails. Bring inspo photos!
+- Direct booking inquiries to the booking form below.
+
+Stay on-topic. Only discuss the studio.`;
+
+const messagesEl = document.getElementById('messages');
+const inputEl = document.getElementById('chatInput');
+const sendBtn = document.getElementById('sendBtn');
+let history = [];
+
+function scrollBottom() { messagesEl.scrollTop = messagesEl.scrollHeight; }
+
+function addMsg(text, who) {
+  const div = document.createElement('div');
+  div.className = `msg ${who}`;
+  const av = document.createElement('div');
+  av.className = 'msg-av';
+  av.textContent = who === 'ai' ? 'S' : 'YOU';
+  const bubble = document.createElement('div');
+  bubble.className = 'bubble';
+  bubble.textContent = text;
+  div.appendChild(av);
+  div.appendChild(bubble);
+  messagesEl.appendChild(div);
+  scrollBottom();
+}
+
+function showTyping() {
+  const div = document.createElement('div');
+  div.className = 'msg ai'; div.id = 'typing';
+  div.innerHTML = `<div class="msg-av">S</div><div class="bubble"><div class="typing"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>`;
+  messagesEl.appendChild(div);
+  scrollBottom();
+}
+
+function removeTyping() { const t = document.getElementById('typing'); if(t) t.remove(); }
+
+async function callOllama(userText) {
+  history.push({ role: 'user', content: userText });
+  const messages = [{ role: 'system', content: SYSTEM_PROMPT }, ...history];
+
+  const res = await fetch(`${OLLAMA_URL}/api/chat`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      model: OLLAMA_MODEL,
+      messages: messages,
+      stream: false
+    })
+  });
+  const data = await res.json();
+  const reply = data.message?.content || 'Hmm, try asking again 💕';
+  history.push({ role: 'assistant', content: reply });
+  return reply;
+}
+
+async function callClaude(userText) {
+  // Works in Claude.ai artifacts; for production replace with your own API endpoint
+  history.push({ role: 'user', content: userText });
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 1000,
+      system: SYSTEM_PROMPT,
+      messages: history
+    })
+  });
+  const data = await res.json();
+  const reply = data.content?.map(b => b.text || '').join('') || 'Oops, try again 💕';
+  history.push({ role: 'assistant', content: reply });
+  return reply;
+}
+
+async function sendMessage() {
+  const text = inputEl.value.trim();
+  if (!text) return;
+  inputEl.value = '';
+  sendBtn.disabled = true;
+  addMsg(text, 'user');
+  showTyping();
+  try {
+    const reply = USE_OLLAMA ? await callOllama(text) : await callClaude(text);
+    removeTyping();
+    addMsg(reply, 'ai');
+  } catch(e) {
+    removeTyping();
+    addMsg('Hmm, the chat is offline right now. Use the booking form below! 🌴', 'ai');
+    console.error(e);
+  }
+  sendBtn.disabled = false;
+  inputEl.focus();
+}
+
+function sendQuick(q) { inputEl.value = q; sendMessage(); }
+inputEl.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(); });
+
+// ━━━━━━━━ BOOKING ━━━━━━━━
+function submitBooking() {
+  const name = document.getElementById('bName').value.trim();
+  const contact = document.getElementById('bContact').value.trim();
+  const service = document.getElementById('bService').value;
+  const date = document.getElementById('bDate').value;
+  if (!name || !contact || !service || !date) {
+    alert('Please fill in your name, contact, service, and date! 🌴');
+    return;
+  }
+  const dateStr = new Date(date + 'T12:00:00').toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric' });
+  document.getElementById('successDetail').innerHTML = `${name}<br>${service}<br>${dateStr}`;
+  document.getElementById('bookingForm').style.display = 'none';
+  document.getElementById('successMsg').classList.add('show');
+}
+
+// ━━━━━━━━ QR CODE ━━━━━━━━
+function generateQR() {
+  const input = document.getElementById('qrUrl').value.trim();
+  const img = document.getElementById('qrImage');
+  const display = document.getElementById('qrUrlDisplay');
+
+  let url = input;
+  if (!url) {
+    if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+      url = window.location.href.split('#')[0];
+      document.getElementById('qrUrl').value = url;
+    } else {
+      display.textContent = 'Paste your live URL above';
+      img.src = '';
+      return;
+    }
+  }
+
+  const qrSrc = `https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=10&data=${encodeURIComponent(url)}&color=1A0F2E&bgcolor=ffffff`;
+  img.src = qrSrc;
+  display.textContent = url;
+  try { localStorage.setItem('scarlettQRUrl', url); } catch(e) {}
+}
+
+function downloadQR() {
+  const img = document.getElementById('qrImage');
+  if (!img.src) { alert('Generate the QR code first! 🌴'); return; }
+  const link = document.createElement('a');
+  link.href = img.src;
+  link.download = 'tips-by-scarlett-qr.png';
+  link.target = '_blank';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+async function shareLink() {
+  const url = document.getElementById('qrUrl').value.trim() || window.location.href.split('#')[0];
+  if (navigator.share) {
+    try { await navigator.share({ title: 'Tips by Scarlett', text: 'Check out my nail studio!', url: url }); } catch(e) {}
+  } else {
+    try { await navigator.clipboard.writeText(url); alert('Link copied! 🌴'); } catch(e) { prompt('Copy this link:', url); }
+  }
+}
+
+// Auto-load saved URL
+window.addEventListener('load', () => {
+  try {
+    const saved = localStorage.getItem('scarlettQRUrl');
+    if (saved) {
+      document.getElementById('qrUrl').value = saved;
+      generateQR();
+    } else if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+      generateQR();
+    }
+  } catch(e) {}
+});
+</script>
+
+</body>
+</html>
